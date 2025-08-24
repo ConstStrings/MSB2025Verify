@@ -74,7 +74,7 @@ void calculate_fft() // 未加窗
 {
     for (int i = 0; i < FFT_LENGTH; i++)
     {
-        fft_inputbuf[2 * i] = Process_Buffer[i] * 3.3f / 4095.0f;
+        fft_inputbuf[2 * i] = (Process_Buffer[i] * 0.5f * (1.0f - cosf(2 * PI * i / (FFT_LENGTH - 1)))) * 3.3f / 4095.0f;
         fft_inputbuf[2 * i + 1] = 0;
     }
 

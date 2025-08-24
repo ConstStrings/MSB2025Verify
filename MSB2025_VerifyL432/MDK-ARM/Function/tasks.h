@@ -4,9 +4,11 @@
 #include "main.h"
 #include "oled.h"
 #include "uart.h"
-
+#include "math.h"
 #include "arm_math.h"
 #include "arm_const_structs.h"
+
+#define PI 3.14159265358979323846
 
 #define SAMPLE_SIZE 1024
 #define SAMPLE_RATE 1333333

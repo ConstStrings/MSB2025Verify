@@ -45,9 +45,9 @@ msb2025_verifyl432\tasks.o: ./Hardware/uart.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\string.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\stdarg.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\stdio.h
+msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\math.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_math.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_math_types.h
-msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\math.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\float.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\limits.h
 msb2025_verifyl432\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_math_memory.h

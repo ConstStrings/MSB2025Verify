@@ -27,21 +27,25 @@ Project File Date:  08/23/2025
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Hardware\MDK\Core\ARM\ARMCC\Bin'
 Build target 'MSB2025_VerifyL432'
-compiling tasks.c...
-./Hardware/uart.h(21): warning:  #1-D: last line of file ends without a newline
-  #endif
-Function\tasks.c: 1 warning, 0 errors
 compiling main.c...
 ./Hardware/uart.h(21): warning:  #1-D: last line of file ends without a newline
   #endif
-../Core/Src/main.c: 1 warning, 0 errors
+./Function/tasks.h(11): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 54 of "E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp/fast_math_functions.h")
+  #define PI 3.14159265358979323846
+../Core/Src/main.c: 2 warnings, 0 errors
+compiling tasks.c...
+./Hardware/uart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+Function\tasks.h(11): warning:  #47-D: incompatible redefinition of macro "PI"  (declared at line 54 of "E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp/fast_math_functions.h")
+  #define PI 3.14159265358979323846
+Function\tasks.c: 2 warnings, 0 errors
 linking...
 MSB2025_VerifyL432\MSB2025_VerifyL432.axf: Warning: L6989W: Could not apply patch sdcomp-29491-629360 to instruction VPOP     {d8-d15} at offset 0xf4, instruction is within an IT block and is not the last instruction for log.o(i.__hardfp_log).
 MSB2025_VerifyL432\MSB2025_VerifyL432.axf: Warning: L6989W: Could not apply patch sdcomp-29491-629360 to instruction VPOP     {d8-d15} at offset 0xf0, instruction is within an IT block and is not the last instruction for log_x.o(i.____hardfp_log$lsc).
-Program Size: Code=24304 RO-data=12860 RW-data=16 ZI-data=18504  
+Program Size: Code=26484 RO-data=12896 RW-data=16 ZI-data=18504  
 Finished: 0 information, 2 warning and 0 error messages.
 FromELF: creating hex file...
-"MSB2025_VerifyL432\MSB2025_VerifyL432.axf" - 0 Error(s), 4 Warning(s).
+"MSB2025_VerifyL432\MSB2025_VerifyL432.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -75,41 +79,41 @@ Package Vendor: Keil
       Include file:  CMSIS/Core/Include/tz_context.h
 
    * Component: ARM::CMSIS:DSP&Source@1.15.0
-      Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
-      Source file:   Source/CommonTables/CommonTables.c
-      Include file:  Include/arm_common_tables.h
-      Source file:   Source/FilteringFunctions/FilteringFunctions.c
-      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
-      Source file:   Source/SVMFunctions/SVMFunctions.c
-      Source file:   Source/TransformFunctions/TransformFunctions.c
-      Include file:  Include/arm_common_tables_f16.h
-      Include file:  Include/arm_const_structs.h
-      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
       Source file:   Source/MatrixFunctions/MatrixFunctions.c
-      Include file:  Include/arm_math_f16.h
+      Include file:  Include/arm_const_structs.h
+      Include file:  Include/arm_math.h
+      Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+      Include file:  Include/arm_common_tables.h
+      Source file:   Source/BayesFunctions/BayesFunctions.c
       Source file:   Source/DistanceFunctions/DistanceFunctions.c
       Source file:   Source/FastMathFunctions/FastMathFunctions.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
+      Source file:   Source/FilteringFunctions/FilteringFunctions.c
+      Source file:   Source/CommonTables/CommonTables.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
       Source file:   Source/SupportFunctions/SupportFunctions.c
-      Source file:   Source/BayesFunctions/BayesFunctions.c
-      Include file:  Include/arm_const_structs_f16.h
-      Include file:  Include/arm_math.h
+      Include file:  Include/arm_math_f16.h
       Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
       Source file:   Source/ControllerFunctions/ControllerFunctions.c
-      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
-      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Include file:  Include/arm_const_structs_f16.h
+      Source file:   Source/SVMFunctions/SVMFunctions.c
+      Include file:  Include/arm_common_tables_f16.h
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctions.c
+      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+      Source file:   Source/CommonTables/CommonTablesF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
       Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
+      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
+      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
       Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
       Source file:   Source/SVMFunctions/SVMFunctionsF16.c
-      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
-      Source file:   Source/CommonTables/CommonTablesF16.c
-      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
-      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
-      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
-      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
-      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
       Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
-      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
-Build Time Elapsed:  00:00:03
+      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
+Build Time Elapsed:  00:00:09
 </pre>
 </body>
 </html>
