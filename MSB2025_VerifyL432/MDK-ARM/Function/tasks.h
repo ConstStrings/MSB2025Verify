@@ -5,11 +5,16 @@
 #include "oled.h"
 #include "uart.h"
 
-#define SAMPLE_SIZE 4096
+#include "arm_math.h"
+#include "arm_const_structs.h"
+
+#define SAMPLE_SIZE 1024
 #define SAMPLE_RATE 1333333
 
 #define FREQ_HI_THRESHOLD 2500
 #define FREQ_LO_THRESHOLD 1500
+
+#define  FFT_LENGTH		  SAMPLE_SIZE
 
 extern ADC_HandleTypeDef hadc1;
 

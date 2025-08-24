@@ -1,7 +1,10 @@
 #include "tasks.h"
 
-uint16_t My_adcData [SAMPLE_SIZE]={0};
-uint16_t Process_Buffer[SAMPLE_SIZE]={0};
+static uint16_t My_adcData [SAMPLE_SIZE+1]={0};
+static uint16_t Process_Buffer[SAMPLE_SIZE]={0};
+
+static float    fft_inputbuf [FFT_LENGTH*2];	
+static float    fft_outputbuf[FFT_LENGTH];
 
 void startup(void)
 {
@@ -21,7 +24,7 @@ void startup(void)
 
     /*****************************ADC*************************/  
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-    HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE);
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
 }
 
 float calculate_freq(void)
@@ -29,7 +32,7 @@ float calculate_freq(void)
     int zero_crossings = 0;
     int in_high_flag = 0;
     int in_low_flag = 0;
-    for(int i = 2; i < SAMPLE_SIZE; i++)
+    for(int i = 1; i < SAMPLE_SIZE; i++)
     {
         if (Process_Buffer[i] > FREQ_HI_THRESHOLD && Process_Buffer[i-1] < FREQ_LO_THRESHOLD)
         {
@@ -62,18 +65,36 @@ float calculate_freq(void)
         }
     }
     // myprintf("Zero Crossings:%d\n", zero_crossings);
-    float freq = SAMPLE_RATE * (zero_crossings / 2.0f) / (SAMPLE_SIZE - 2);
+    float freq = SAMPLE_RATE * (zero_crossings / 2.0f) / (SAMPLE_SIZE - 1);
     myprintf("Calculated Freq:%.2f\n", freq);
     return freq;
+}
+
+void calculate_fft() // 未加窗
+{
+    for (int i = 0; i < FFT_LENGTH; i++)
+    {
+        fft_inputbuf[2 * i] = Process_Buffer[i] * 3.3f / 4095.0f;
+        fft_inputbuf[2 * i + 1] = 0;
+    }
+
+    arm_cfft_f32(&arm_cfft_sR_f32_len1024, fft_inputbuf, 0, 1);
+    arm_cmplx_mag_f32(fft_inputbuf, fft_outputbuf, FFT_LENGTH);
+
+    for (int i = 0; i < FFT_LENGTH; i++)
+    {
+        myprintf("%d,%f\r\n", i, fft_outputbuf[i]); //未加窗
+    }
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     if(hadc->Instance == ADC1)
     {
-        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE);
-        memcpy(Process_Buffer, My_adcData, SAMPLE_SIZE * sizeof(uint16_t));
-        calculate_freq();
+        memcpy(Process_Buffer, My_adcData+(sizeof(uint16_t)), SAMPLE_SIZE * sizeof(uint16_t));
+        // calculate_freq();
+        calculate_fft();
+        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
         // for(int i = 1; i < SAMPLE_SIZE; i++)
         // {
         //     myprintf("%d\n", My_adcData[i]);

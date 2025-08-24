@@ -1,41 +1,39 @@
-msb2025_verifyl432/stm32l4xx_hal_pwr.o: \
-  ..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal.h \
-  ..\Core\Inc\stm32l4xx_hal_conf.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_def.h \
-  ..\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l4xx.h \
-  ..\Drivers\CMSIS\Device\ST\STM32L4xx\Include\stm32l432xx.h \
-  ..\Drivers\CMSIS\Include\core_cm4.h \
-  E:\Hardware\MDK\Core\ARM\ARMCLANG\include\stdint.h \
-  d:\Code\git\MSB2025\MSB2025_VerifyL432\Drivers\CMSIS\Include\cmsis_version.h \
-  d:\Code\git\MSB2025\MSB2025_VerifyL432\Drivers\CMSIS\Include\cmsis_compiler.h \
-  d:\Code\git\MSB2025\MSB2025_VerifyL432\Drivers\CMSIS\Include\cmsis_armclang.h \
-  E:\Hardware\MDK\Core\ARM\ARMCLANG\include\arm_compat.h \
-  E:\Hardware\MDK\Core\ARM\ARMCLANG\include\arm_acle.h \
-  d:\Code\git\MSB2025\MSB2025_VerifyL432\Drivers\CMSIS\Include\mpu_armv7.h \
-  ..\Drivers\CMSIS\Device\ST\STM32L4xx\Include\system_stm32l4xx.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  E:\Hardware\MDK\Core\ARM\ARMCLANG\include\stddef.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dma.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_cortex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_adc.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_ll_adc.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_adc_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dac.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_dac_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_exti.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_flash_ramfunc.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_i2c_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_pwr_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_tim.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_tim_ex.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart.h \
-  ..\Drivers\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_uart_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Core/Inc/stm32l4xx_hal_conf.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l432xx.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Include/core_cm4.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\stdint.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_version.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: E:\Hardware\MDK\Core\ARM\ARMCC\Bin\..\include\stddef.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_gpio_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dma.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_cortex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_adc.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_adc_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_dac_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_exti.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_flash_ramfunc.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_i2c_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h
+msb2025_verifyl432\stm32l4xx_hal_pwr.o: ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h

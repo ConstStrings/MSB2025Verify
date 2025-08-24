@@ -9,12 +9,12 @@ License Information: Const String, -, LIC=SDAOP-MY1UI-45PT5-GHU5Z-R17VI-NKP57
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
-Toolchain Path:  E:\Hardware\MDK\Core\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.21
-Assembler:       Armasm.exe V6.21
-Linker/Locator:  ArmLink.exe V6.21
-Library Manager: ArmAr.exe V6.21
-Hex Converter:   FromElf.exe V6.21
+Toolchain Path:  E:\Hardware\MDK\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
 CPU DLL:         SARMCM3.DLL V5.39.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
 Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
@@ -25,50 +25,23 @@ d:\Code\git\MSB2025\MSB2025_VerifyL432\MDK-ARM\MSB2025_VerifyL432.uvprojx
 Project File Date:  08/23/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.21', folder: 'E:\Hardware\MDK\Core\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Hardware\MDK\Core\ARM\ARMCC\Bin'
 Build target 'MSB2025_VerifyL432'
-compiling dma.c...
-compiling dac.c...
-compiling main.c...
-compiling tim.c...
-compiling adc.c...
-compiling i2c.c...
-compiling gpio.c...
-compiling stm32l4xx_it.c...
-compiling stm32l4xx_hal_msp.c...
-compiling usart.c...
-compiling stm32l4xx_hal.c...
-compiling stm32l4xx_hal_rcc.c...
-compiling stm32l4xx_hal_flash.c...
-compiling stm32l4xx_hal_adc_ex.c...
-compiling stm32l4xx_hal_flash_ex.c...
-compiling stm32l4xx_hal_flash_ramfunc.c...
-compiling stm32l4xx_hal_rcc_ex.c...
-compiling stm32l4xx_hal_adc.c...
-compiling stm32l4xx_hal_dma_ex.c...
-compiling stm32l4xx_hal_gpio.c...
-compiling stm32l4xx_hal_dma.c...
-compiling stm32l4xx_hal_pwr.c...
-compiling stm32l4xx_hal_dac.c...
-compiling stm32l4xx_hal_dac_ex.c...
-compiling stm32l4xx_hal_cortex.c...
-compiling stm32l4xx_hal_pwr_ex.c...
-compiling stm32l4xx_hal_exti.c...
-compiling stm32l4xx_hal_i2c_ex.c...
-compiling oledfont.c...
-compiling stm32l4xx_hal_tim_ex.c...
-compiling uart.c...
-compiling stm32l4xx_hal_uart_ex.c...
 compiling tasks.c...
-compiling system_stm32l4xx.c...
-compiling oled.c...
-compiling stm32l4xx_hal_uart.c...
-compiling stm32l4xx_hal_i2c.c...
-compiling stm32l4xx_hal_tim.c...
+./Hardware/uart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+Function\tasks.c: 1 warning, 0 errors
+compiling main.c...
+./Hardware/uart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=23484 RO-data=1068 RW-data=12 ZI-data=18508  
+MSB2025_VerifyL432\MSB2025_VerifyL432.axf: Warning: L6989W: Could not apply patch sdcomp-29491-629360 to instruction VPOP     {d8-d15} at offset 0xf4, instruction is within an IT block and is not the last instruction for log.o(i.__hardfp_log).
+MSB2025_VerifyL432\MSB2025_VerifyL432.axf: Warning: L6989W: Could not apply patch sdcomp-29491-629360 to instruction VPOP     {d8-d15} at offset 0xf0, instruction is within an IT block and is not the last instruction for log_x.o(i.____hardfp_log$lsc).
+Program Size: Code=24304 RO-data=12860 RW-data=16 ZI-data=18504  
+Finished: 0 information, 2 warning and 0 error messages.
 FromELF: creating hex file...
-"MSB2025_VerifyL432\MSB2025_VerifyL432.axf" - 0 Error(s), 0 Warning(s).
+"MSB2025_VerifyL432\MSB2025_VerifyL432.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -78,6 +51,12 @@ Package Vendor: ARM
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.6.0
 
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-DSP.1.15.0.pack
+                ARM::CMSIS-DSP@1.15.0
+                CMSIS Embedded Compute Library
+   * Component: DSP Variant: Source Version: 1.15.0
+
 Package Vendor: Keil
                 https://www.keil.com/pack/Keil.STM32L4xx_DFP.2.7.0.pack
                 Keil::STM32L4xx_DFP@2.7.0
@@ -85,6 +64,8 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_MSB2025_VerifyL432
+  E:/Hardware/MDK/Packs/ARM/CMSIS-DSP/1.15.0/Include
+  E:/Hardware/MDK/Packs/ARM/CMSIS-DSP/1.15.0/PrivateInclude
   E:/Hardware/MDK/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
   E:/Hardware/MDK/Packs/Keil/STM32L4xx_DFP/2.7.0/Drivers/CMSIS/Device/ST/STM32L4xx/Include
 
@@ -92,7 +73,43 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+
+   * Component: ARM::CMSIS:DSP&Source@1.15.0
+      Source file:   Source/QuaternionMathFunctions/QuaternionMathFunctions.c
+      Source file:   Source/CommonTables/CommonTables.c
+      Include file:  Include/arm_common_tables.h
+      Source file:   Source/FilteringFunctions/FilteringFunctions.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctions.c
+      Source file:   Source/SVMFunctions/SVMFunctions.c
+      Source file:   Source/TransformFunctions/TransformFunctions.c
+      Include file:  Include/arm_common_tables_f16.h
+      Include file:  Include/arm_const_structs.h
+      Source file:   Source/BasicMathFunctions/BasicMathFunctions.c
+      Source file:   Source/MatrixFunctions/MatrixFunctions.c
+      Include file:  Include/arm_math_f16.h
+      Source file:   Source/DistanceFunctions/DistanceFunctions.c
+      Source file:   Source/FastMathFunctions/FastMathFunctions.c
+      Source file:   Source/SupportFunctions/SupportFunctions.c
+      Source file:   Source/BayesFunctions/BayesFunctions.c
+      Include file:  Include/arm_const_structs_f16.h
+      Include file:  Include/arm_math.h
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctions.c
+      Source file:   Source/ControllerFunctions/ControllerFunctions.c
+      Source file:   Source/TransformFunctions/TransformFunctionsF16.c
+      Source file:   Source/BayesFunctions/BayesFunctionsF16.c
+      Source file:   Source/BasicMathFunctions/BasicMathFunctionsF16.c
+      Source file:   Source/FastMathFunctions/FastMathFunctionsF16.c
+      Source file:   Source/SVMFunctions/SVMFunctionsF16.c
+      Source file:   Source/ComplexMathFunctions/ComplexMathFunctionsF16.c
+      Source file:   Source/CommonTables/CommonTablesF16.c
+      Source file:   Source/MatrixFunctions/MatrixFunctionsF16.c
+      Source file:   Source/DistanceFunctions/DistanceFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctions.c
+      Source file:   Source/FilteringFunctions/FilteringFunctionsF16.c
+      Source file:   Source/InterpolationFunctions/InterpolationFunctionsF16.c
+      Source file:   Source/StatisticsFunctions/StatisticsFunctionsF16.c
+      Source file:   Source/SupportFunctions/SupportFunctionsF16.c
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

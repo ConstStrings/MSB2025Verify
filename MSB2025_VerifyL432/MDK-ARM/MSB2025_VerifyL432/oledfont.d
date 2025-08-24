@@ -1,1 +1,2 @@
-msb2025_verifyl432/oledfont.o: Hardware\oledfont.c Hardware\oledfont.h
+msb2025_verifyl432\oledfont.o: Hardware\oledfont.c
+msb2025_verifyl432\oledfont.o: Hardware\oledfont.h

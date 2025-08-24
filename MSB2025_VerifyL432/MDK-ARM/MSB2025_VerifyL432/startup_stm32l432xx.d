@@ -1,0 +1,1 @@
+msb2025_verifyl432\startup_stm32l432xx.o: startup_stm32l432xx.s
