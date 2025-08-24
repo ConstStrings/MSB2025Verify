@@ -23,5 +23,7 @@ extern ADC_HandleTypeDef hadc1;
 void startup(void);
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc);
 float calculate_freq(void);
+void calculate_fft(void);
+void calculate_mixfreq(void);
 
 #endif

@@ -70,7 +70,7 @@ float calculate_freq(void)
     return freq;
 }
 
-void calculate_fft() // 未加窗
+void calculate_fft() // Hanning Window
 {
     for (int i = 0; i < FFT_LENGTH; i++)
     {
@@ -81,10 +81,39 @@ void calculate_fft() // 未加窗
     arm_cfft_f32(&arm_cfft_sR_f32_len1024, fft_inputbuf, 0, 1);
     arm_cmplx_mag_f32(fft_inputbuf, fft_outputbuf, FFT_LENGTH);
 
-    for (int i = 0; i < FFT_LENGTH; i++)
+    // for (int i = 0; i < FFT_LENGTH; i++)
+    // {
+    //     myprintf("%d,%f\r\n", i, fft_outputbuf[i]); 
+    // }
+}
+
+void calculate_mixfreq()
+{
+    float freq1 = 0, freq2 = 0, value1 = 0, value2 = 0;
+    fft_outputbuf[0] = 0; 
+    fft_outputbuf[1] = 0; 
+    for (int i = 1; i < FFT_LENGTH / 2; i++)
     {
-        myprintf("%d,%f\r\n", i, fft_outputbuf[i]); //未加窗
+        if (fft_outputbuf[i] > fft_outputbuf[i-1] && fft_outputbuf[i] > fft_outputbuf[i+1])
+        {
+            if (fft_outputbuf[i] > value1)
+            {
+                freq2 = freq1;
+                value2 = value1;
+                freq1 = i;
+                value1 = fft_outputbuf[i];
+            }
+            else if (fft_outputbuf[i] > value2)
+            {
+                freq2 = i;
+                value2 = fft_outputbuf[i];
+            }
+        }
     }
+    freq1 *= SAMPLE_RATE / FFT_LENGTH;
+    freq2 *= SAMPLE_RATE / FFT_LENGTH;
+    myprintf("Freq1:%.2f, Value1:%.2f\r\n", freq1, value1);
+    myprintf("Freq2:%.2f, Value2:%.2f\r\n", freq2, value2);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
@@ -94,6 +123,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         memcpy(Process_Buffer, My_adcData+(sizeof(uint16_t)), SAMPLE_SIZE * sizeof(uint16_t));
         // calculate_freq();
         calculate_fft();
+        calculate_mixfreq();
         HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
         // for(int i = 1; i < SAMPLE_SIZE; i++)
         // {
