@@ -7,12 +7,13 @@
 #include "math.h"
 #include "arm_math.h"
 #include "arm_const_structs.h"
+#include "ui.h"
 
 #define SAMPLE_SIZE 1024
-#define SAMPLE_RATE 708333
+#define SAMPLE_RATE 236111
 
-#define FREQ_HI_THRESHOLD 1000
-#define FREQ_LO_THRESHOLD -1000
+#define FREQ_HI_THRESHOLD 200
+#define FREQ_LO_THRESHOLD -200
 
 #define  FFT_LENGTH		  SAMPLE_SIZE
 
@@ -35,5 +36,6 @@ void calculate_fft(void);
 void calculate_mixfreq(void);
 void dac_update(void);
 enum WaveformType Calculate_Waveform(void);
+void ADC_Start(void);
 
 #endif

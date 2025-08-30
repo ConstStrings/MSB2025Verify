@@ -72,3 +72,5 @@ msb2025_verifyg431\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\d
 msb2025_verifyg431\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp/window_functions.h
 msb2025_verifyg431\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_const_structs.h
 msb2025_verifyg431\tasks.o: E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_common_tables.h
+msb2025_verifyg431\tasks.o: Function\ui.h
+msb2025_verifyg431\tasks.o: Function\tasks.h

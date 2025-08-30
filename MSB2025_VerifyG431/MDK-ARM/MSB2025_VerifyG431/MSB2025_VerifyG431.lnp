@@ -37,6 +37,7 @@
 "msb2025_verifyg431\system_stm32g4xx.o"
 "msb2025_verifyg431\dds.o"
 "msb2025_verifyg431\tasks.o"
+"msb2025_verifyg431\ui.o"
 "msb2025_verifyg431\oled.o"
 "msb2025_verifyg431\oledfont.o"
 "msb2025_verifyg431\uart.o"

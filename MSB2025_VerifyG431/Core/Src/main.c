@@ -30,6 +30,7 @@
 /* USER CODE BEGIN Includes */
 #include "tasks.h"
 #include "dds.h"
+#include "ui.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,11 +101,12 @@ int main(void)
   MX_TIM6_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
+  UI_Init();
   // DDS_Init();
   // DDS_Reload(99000, 3.0f); // 10kHz, 3Vpp
-  startup();
-  HAL_TIM_Base_Start(&htim1);
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+  // startup();
+  // HAL_TIM_Base_Start(&htim1);
+  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,35 +116,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  //   static uint32_t last_freq_update = 0;
-  //   static uint32_t current_freq = 10000; // Start at 10kHz
-  //   static uint8_t freq_direction = 1; // 1 for increasing, 0 for decreasing
-
-  //   if (HAL_GetTick() - last_freq_update >= 1000) // 100ms interval
-  //   {
-  //     DDS_Reload(current_freq, 3.0f); // Amplitude set to 4000 (12-bit DAC)
-      
-  //     if (freq_direction)
-  //     {
-  //       current_freq += 1000; // Increase by 1kHz each step
-  //       if (current_freq >= 100000) // Reached 100kHz
-  //       {
-  //         current_freq = 100000;
-  //         freq_direction = 0; // Start decreasing
-  //       }
-  //     }
-  //     else
-  //     {
-  //       current_freq -= 1000; // Decrease by 1kHz each step
-  //       if (current_freq <= 10000) // Reached 10kHz
-  //       {
-  //         current_freq = 10000;
-  //         freq_direction = 1; // Start increasing
-  //       }
-  //     }
-      
-  //     last_freq_update = HAL_GetTick();
-  //   }
+    UI_Update();
+    HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
@@ -169,7 +144,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV2;
   RCC_OscInitStruct.PLL.PLLN = 85;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV6;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)

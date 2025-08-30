@@ -6,11 +6,11 @@ static int16_t Process_Buffer[SAMPLE_SIZE]={0};
 static float    fft_inputbuf [FFT_LENGTH*2];	
 static float    fft_outputbuf[FFT_LENGTH];
 
+extern enum Page current_page;
+
 void startup(void)
 {
-    OLED_Init();
-    OLED_Clear();
-    OLED_ShowString(32,0,"MSB2025",16,0);
+    
     myprintf("System Start\r\n");
 
     for(int i = 0; i < 5; i++) {
@@ -120,6 +120,7 @@ void calculate_mixfreq()
     freq2 *= SAMPLE_RATE / FFT_LENGTH;
     myprintf("Freq1:%.2f, Value1:%.2f\r\n", freq1, value1);
     myprintf("Freq2:%.2f, Value2:%.2f\r\n", freq2, value2);
+    OLED_ShowString(32,0,"MSB2025",16,0);
     OLED_ShowString(0,2,"Mix Signal Mode",16,0);
     OLED_ShowString(0,4,"Freq1:",16,0);
     OLED_ShowString(110,4,"Hz",16,0);
@@ -131,6 +132,7 @@ void calculate_mixfreq()
 
 enum WaveformType Calculate_Waveform(void)
 {
+    OLED_ShowString(32,0,"MSB2025",16,0);
     float freq = calculate_freq();
     myprintf("Waveform Frequency: %.2f Hz\r\n", freq);
     OLED_ShowString(0,6,"Freq:",16,0);
@@ -175,20 +177,15 @@ enum WaveformType Calculate_Waveform(void)
     return WAVE_NO_SIGNAL;
 }
 
-
-void generate_ifft(void)
+void ADC_Start(void)
 {
-	// arm_cfft_f32(&arm_cfft_sR_f32_len2048, fft_inputbuf, 1, 1);
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
 }
-
-
-
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     if(hadc->Instance == ADC1)
     {
-        // memcpy(Process_Buffer, My_adcData+(sizeof(uint16_t)), SAMPLE_SIZE * sizeof(uint16_t));
         int32_t mean = 0;
         for(int i = 1; i <= SAMPLE_SIZE; i++)
         {
@@ -200,11 +197,28 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
             Process_Buffer[i-1] = (int16_t)My_adcData[i] - mean;
             // myprintf("Process_Buffer[%d]: %f\n", i-1, Process_Buffer[i-1]);
         }
-        Calculate_Waveform();
-        // calculate_fft();
-        // calculate_mixfreq();
+        switch (current_page)
+        {
+        case PAGE_HOME:
+            
+            break;
+
+        case PAGE_PURE:
+            Calculate_Waveform();
+            break;
+
+        case PAGE_MIX:
+            calculate_fft();
+            calculate_mixfreq();
+            break;
+
+        default:
+            break;
+        }
+       
+
         // dac_update();
-        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
+        
         // for(int i = 1; i < SAMPLE_SIZE; i++)
         // {
         //     myprintf("%d\n", My_adcData[i]);
