@@ -22,8 +22,8 @@ void startup(void)
     }
 
     /*****************************ADC*************************/  
-    // HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-    // HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
+    HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
+    HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
 	
 	
 	//HAL_DAC_Start_DMA(&hdac1,DAC_CHANNEL_1, (uint32_t *)Process_Buffer, SAMPLE_SIZE, DAC_ALIGN_12B_R);
@@ -204,7 +204,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         // calculate_fft();
         // calculate_mixfreq();
         // dac_update();
-        // HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
+        HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
         // for(int i = 1; i < SAMPLE_SIZE; i++)
         // {
         //     myprintf("%d\n", My_adcData[i]);

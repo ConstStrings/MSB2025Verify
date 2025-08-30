@@ -95,16 +95,16 @@ int main(void)
   MX_DMA_Init();
   MX_ADC1_Init();
   MX_I2C1_Init();
-  MX_USART1_UART_Init();
   MX_DAC1_Init();
   MX_TIM1_Init();
   MX_TIM6_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  // startup();
-  DDS_Init();
-  // HAL_TIM_Base_Start(&htim1);
-  // HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-
+  // DDS_Init();
+  // DDS_Reload(99000, 3.0f); // 10kHz, 3Vpp
+  startup();
+  HAL_TIM_Base_Start(&htim1);
+  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -114,35 +114,35 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    static uint32_t last_freq_update = 0;
-    static uint32_t current_freq = 10000; // Start at 10kHz
-    static uint8_t freq_direction = 1; // 1 for increasing, 0 for decreasing
+  //   static uint32_t last_freq_update = 0;
+  //   static uint32_t current_freq = 10000; // Start at 10kHz
+  //   static uint8_t freq_direction = 1; // 1 for increasing, 0 for decreasing
 
-    if (HAL_GetTick() - last_freq_update >= 100) // 100ms interval
-    {
-      DDS_Reload(current_freq, 3.0f); // Amplitude set to 4000 (12-bit DAC)
+  //   if (HAL_GetTick() - last_freq_update >= 1000) // 100ms interval
+  //   {
+  //     DDS_Reload(current_freq, 3.0f); // Amplitude set to 4000 (12-bit DAC)
       
-      if (freq_direction)
-      {
-        current_freq += 1000; // Increase by 1kHz each step
-        if (current_freq >= 100000) // Reached 100kHz
-        {
-          current_freq = 100000;
-          freq_direction = 0; // Start decreasing
-        }
-      }
-      else
-      {
-        current_freq -= 1000; // Decrease by 1kHz each step
-        if (current_freq <= 10000) // Reached 10kHz
-        {
-          current_freq = 10000;
-          freq_direction = 1; // Start increasing
-        }
-      }
+  //     if (freq_direction)
+  //     {
+  //       current_freq += 1000; // Increase by 1kHz each step
+  //       if (current_freq >= 100000) // Reached 100kHz
+  //       {
+  //         current_freq = 100000;
+  //         freq_direction = 0; // Start decreasing
+  //       }
+  //     }
+  //     else
+  //     {
+  //       current_freq -= 1000; // Decrease by 1kHz each step
+  //       if (current_freq <= 10000) // Reached 10kHz
+  //       {
+  //         current_freq = 10000;
+  //         freq_direction = 1; // Start increasing
+  //       }
+  //     }
       
-      last_freq_update = HAL_GetTick();
-    }
+  //     last_freq_update = HAL_GetTick();
+  //   }
   }
   /* USER CODE END 3 */
 }

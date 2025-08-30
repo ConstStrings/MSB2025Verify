@@ -6,7 +6,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-extern UART_HandleTypeDef huart1;
+extern UART_HandleTypeDef huart3;
 
 int myprintf(const char *format, ...);
 

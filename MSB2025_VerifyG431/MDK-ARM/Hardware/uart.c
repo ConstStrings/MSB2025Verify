@@ -10,7 +10,7 @@ int myprintf(const char *format, ...)
     vsnprintf(buffer, sizeof(buffer), format, args);
     va_end(args);
 
-    return HAL_UART_Transmit(&huart1, (uint8_t*)buffer, strlen(buffer), HAL_MAX_DELAY);
+    return HAL_UART_Transmit(&huart3, (uint8_t*)buffer, strlen(buffer), HAL_MAX_DELAY);
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -18,6 +18,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     if (huart->Instance == USART2)	
     {
 
-        HAL_UART_Receive_IT(&huart1,RxBuffer1,1);	
+        HAL_UART_Receive_IT(&huart3,RxBuffer1,1);	
     }
 }

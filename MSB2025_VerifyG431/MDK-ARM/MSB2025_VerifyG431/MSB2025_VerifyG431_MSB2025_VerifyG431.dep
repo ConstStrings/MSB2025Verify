@@ -1,7 +1,7 @@
 Dependencies for Project 'MSB2025_VerifyG431', Target 'MSB2025_VerifyG431': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32g431xx.s)(0x68B2D1BD)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32G431xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g431xx.lst --xref -o msb2025_verifyg431\startup_stm32g431xx.o --depend msb2025_verifyg431\startup_stm32g431xx.d)
-F (../Core/Src/main.c)(0x68B2EB64)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\main.o --omf_browse msb2025_verifyg431\main.crf --depend msb2025_verifyg431\main.d)
+F (startup_stm32g431xx.s)(0x68B2F915)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32G431xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32g431xx.lst --xref -o msb2025_verifyg431\startup_stm32g431xx.o --depend msb2025_verifyg431\startup_stm32g431xx.d)
+F (../Core/Src/main.c)(0x68B2FE4A)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\main.o --omf_browse msb2025_verifyg431\main.crf --depend msb2025_verifyg431\main.d)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x68B26BBC)
@@ -46,12 +46,12 @@ I (../Core/Inc/dac.h)(0x68B26BBC)
 I (../Core/Inc/dma.h)(0x68B26BBC)
 I (../Core/Inc/i2c.h)(0x68B26BBC)
 I (../Core/Inc/tim.h)(0x68B2CFC8)
-I (../Core/Inc/usart.h)(0x68B26BBC)
+I (../Core/Inc/usart.h)(0x68B2F82F)
 I (../Core/Inc/gpio.h)(0x68B26BBB)
 I (./Function/tasks.h)(0x68B2AA5A)
 I (./Hardware/oled.h)(0x68B26D95)
 I (./Hardware/oledfont.h)(0x667D2502)
-I (./Hardware/uart.h)(0x68B26DDE)
+I (./Hardware/uart.h)(0x68B2F86F)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
@@ -82,7 +82,7 @@ I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp\window_functions.h)(0x
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_const_structs.h)(0x64E2E2DE)
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_common_tables.h)(0x64E2E2DE)
 I (./Function/dds.h)(0x68B2D1CE)
-F (../Core/Src/gpio.c)(0x68B26BBB)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\gpio.o --omf_browse msb2025_verifyg431\gpio.crf --depend msb2025_verifyg431\gpio.d)
+F (../Core/Src/gpio.c)(0x68B2F912)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\gpio.o --omf_browse msb2025_verifyg431\gpio.crf --depend msb2025_verifyg431\gpio.d)
 I (../Core/Inc/gpio.h)(0x68B26BBB)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
@@ -328,8 +328,8 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x66EFC976)
-F (../Core/Src/usart.c)(0x68B26BBC)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\usart.o --omf_browse msb2025_verifyg431\usart.crf --depend msb2025_verifyg431\usart.d)
-I (../Core/Inc/usart.h)(0x68B26BBC)
+F (../Core/Src/usart.c)(0x68B2F82F)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\usart.o --omf_browse msb2025_verifyg431\usart.crf --depend msb2025_verifyg431\usart.d)
+I (../Core/Inc/usart.h)(0x68B2F82F)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x68B26BBC)
@@ -1387,7 +1387,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x66EFC976)
-F (.\Function\dds.c)(0x68B2D08E)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\dds.o --omf_browse msb2025_verifyg431\dds.crf --depend msb2025_verifyg431\dds.d)
+F (.\Function\dds.c)(0x68B2F4AB)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\dds.o --omf_browse msb2025_verifyg431\dds.crf --depend msb2025_verifyg431\dds.d)
 I (Function\dds.h)(0x68B2D1CE)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
@@ -1429,12 +1429,12 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x66EFC976)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
-I (./Hardware/uart.h)(0x68B26DDE)
+I (./Hardware/uart.h)(0x68B2F86F)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 F (.\Function\dds.h)(0x68B2D1CE)()
-F (.\Function\tasks.c)(0x68B2C316)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\tasks.o --omf_browse msb2025_verifyg431\tasks.crf --depend msb2025_verifyg431\tasks.d)
+F (.\Function\tasks.c)(0x68B2F6E9)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\tasks.o --omf_browse msb2025_verifyg431\tasks.crf --depend msb2025_verifyg431\tasks.d)
 I (Function\tasks.h)(0x68B2AA5A)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
@@ -1475,9 +1475,9 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h)(0x66EFC976)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x66EFC976)
-I (.\Hardware\oled.h)(0x68B26D95)
-I (.\Hardware\oledfont.h)(0x667D2502)
-I (.\Hardware\uart.h)(0x68B26DDE)
+I (./Hardware/oled.h)(0x68B26D95)
+I (./Hardware/oledfont.h)(0x667D2502)
+I (./Hardware/uart.h)(0x68B2F86F)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
@@ -1554,8 +1554,8 @@ F (.\Hardware\oled.h)(0x68B26D95)()
 F (.\Hardware\oledfont.c)(0x667D2502)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\oledfont.o --omf_browse msb2025_verifyg431\oledfont.crf --depend msb2025_verifyg431\oledfont.d)
 I (Hardware\oledfont.h)(0x667D2502)
 F (.\Hardware\oledfont.h)(0x667D2502)()
-F (.\Hardware\uart.c)(0x68B26DDE)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\uart.o --omf_browse msb2025_verifyg431\uart.crf --depend msb2025_verifyg431\uart.d)
-I (Hardware\uart.h)(0x68B26DDE)
+F (.\Hardware\uart.c)(0x68B2F84F)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\uart.o --omf_browse msb2025_verifyg431\uart.crf --depend msb2025_verifyg431\uart.d)
+I (Hardware\uart.h)(0x68B2F86F)
 I (../Core/Inc/main.h)(0x68B26BBC)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x66EFC976)
 I (../Core/Inc/stm32g4xx_hal_conf.h)(0x68B26BBC)
@@ -1598,7 +1598,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h)(0x66EFC976)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
 I (E:\Hardware\MDK\Core\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
-F (.\Hardware\uart.h)(0x68B26DDE)()
+F (.\Hardware\uart.h)(0x68B2F86F)()
 F (E:/Hardware/MDK/Packs/ARM/CMSIS-DSP/1.15.0/Source/BasicMathFunctions/BasicMathFunctions.c)(0x64E2E2DE)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyG431-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyg431\basicmathfunctions.o --omf_browse msb2025_verifyg431\basicmathfunctions.crf --depend msb2025_verifyg431\basicmathfunctions.d)
 I (E:/Hardware/MDK/Packs/ARM/CMSIS-DSP/1.15.0/Source/BasicMathFunctions/arm_abs_f32.c)(0x64E2E2DE)
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp\basic_math_functions.h)(0x64E2E2DE)

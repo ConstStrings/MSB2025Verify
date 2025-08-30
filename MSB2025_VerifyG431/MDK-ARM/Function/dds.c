@@ -11,11 +11,25 @@ void DDS_Init(void)
 
 void DDS_Reload(uint32_t frequency, float amplitude)
 {
-    uint16_t sppl = DDS_SAMPLE_RATE / frequency; // samples per period
-    uint16_t period_count = DDS_BUFF_SIZE / sppl; // number of periods in buffer
-    uint16_t real_buff_size = period_count * sppl; // actual buffer size used
+    float phase_step = (2.0f * PI * frequency) / DDS_SAMPLE_RATE;
+    uint16_t target_index;
+    float target_error = 1;
+    for (int i = 1; i < DDS_BUFF_SIZE; i++) {
+        float sample = sinf(i * phase_step);
+        float d_sample = cosf(i * phase_step);
+        if(d_sample > 0 && fabs(sample) < target_error)
+        {
+            target_error = fabs(sample);
+            target_index = i;
+        }
+    }
+    myprintf("Target Index: %d, Target Error: %.2f\n", target_index, target_error);
+    uint16_t real_buff_size = target_index;
+    uint16_t period_count = (frequency * real_buff_size) / DDS_SAMPLE_RATE;
+    phase_step = (2.0f * PI * period_count) / real_buff_size;
+    float real_freq = (DDS_SAMPLE_RATE * period_count) / (real_buff_size);
+    myprintf("Real Frequency: %.2f Hz\n", real_freq);
 
-    float phase_step = (2.0f * PI) / sppl;
     HAL_DAC_Stop_DMA(&hdac1,DAC_CHANNEL_1);
     for (int i = 0; i < real_buff_size; i++) {
         float sample = sinf(i * phase_step);
