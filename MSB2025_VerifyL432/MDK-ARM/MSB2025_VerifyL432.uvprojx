@@ -947,6 +947,16 @@
               <FileType>5</FileType>
               <FilePath>.\Function\tasks.h</FilePath>
             </File>
+            <File>
+              <FileName>dds.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Function\dds.c</FilePath>
+            </File>
+            <File>
+              <FileName>dds.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Function\dds.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

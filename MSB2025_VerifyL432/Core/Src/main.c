@@ -98,6 +98,7 @@ int main(void)
   MX_I2C1_Init();
   MX_USART2_UART_Init();
   MX_TIM1_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
   startup();
   HAL_TIM_Base_Start(&htim1);
@@ -111,6 +112,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  // dac_update();
+	  HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }

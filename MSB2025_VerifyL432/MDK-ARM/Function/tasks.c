@@ -6,6 +6,8 @@ static uint16_t Process_Buffer[SAMPLE_SIZE]={0};
 static float    fft_inputbuf [FFT_LENGTH*2];	
 static float    fft_outputbuf[FFT_LENGTH];
 
+static uint16_t dac_buffer[SAMPLE_SIZE]={0};
+
 void startup(void)
 {
     // OLED_Init();
@@ -25,6 +27,10 @@ void startup(void)
     /*****************************ADC*************************/  
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
     HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
+	
+	HAL_TIM_Base_Start(&htim6);
+	//HAL_DAC_Start_DMA(&hdac1,DAC_CHANNEL_1, (uint32_t *)Process_Buffer, SAMPLE_SIZE, DAC_ALIGN_12B_R);
+	//HAL_DAC_Start_DMA(&hdac1,DAC_CHANNEL_1, (uint32_t *)dac_test, 4, DAC_ALIGN_12B_R);
 }
 
 float calculate_freq(void)
@@ -78,7 +84,7 @@ void calculate_fft() // Hanning Window
         fft_inputbuf[2 * i + 1] = 0;
     }
 
-    arm_cfft_f32(&arm_cfft_sR_f32_len1024, fft_inputbuf, 0, 1);
+    arm_cfft_f32(&arm_cfft_sR_f32_len2048, fft_inputbuf, 0, 1);
     arm_cmplx_mag_f32(fft_inputbuf, fft_outputbuf, FFT_LENGTH);
 
     // for (int i = 0; i < FFT_LENGTH; i++)
@@ -116,14 +122,53 @@ void calculate_mixfreq()
     myprintf("Freq2:%.2f, Value2:%.2f\r\n", freq2, value2);
 }
 
+
+void generate_ifft(void)
+{
+	// arm_cfft_f32(&arm_cfft_sR_f32_len2048, fft_inputbuf, 1, 1);
+}
+
+void dac_update(void)
+{
+	uint16_t *period_start,*period_end;
+	for(int i=1;i<SAMPLE_SIZE;i++)
+	{
+		if(Process_Buffer[i-1]<2048&&Process_Buffer[i]>=2048)
+		{
+			period_start = &Process_Buffer[i];
+			break;
+		}
+	}
+	for(int i=SAMPLE_SIZE;i>1;i--)
+	{
+		if(Process_Buffer[i-1]<2048&&Process_Buffer[i]>=2048)
+		{
+			period_end = &Process_Buffer[i];
+			break;
+		}
+	}
+	uint16_t dac_len = period_end - period_start + 1;
+	HAL_DAC_Stop_DMA(&hdac1,DAC_CHANNEL_1);
+	HAL_Delay(3);
+	memcpy(dac_buffer,period_start, dac_len * sizeof(uint16_t));
+	HAL_DAC_Start_DMA(&hdac1,DAC_CHANNEL_1, (uint32_t *)dac_buffer, dac_len, DAC_ALIGN_12B_R);
+    myprintf("DAC Update: %d samples\n", dac_len);
+    for(int i = 0; i < dac_len && dac_len < 2048; i++)
+    {
+        myprintf("DAC[%d]: %d\r\n", i, dac_buffer[i]);
+    }
+}
+
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
     if(hadc->Instance == ADC1)
     {
         memcpy(Process_Buffer, My_adcData+(sizeof(uint16_t)), SAMPLE_SIZE * sizeof(uint16_t));
         // calculate_freq();
-        calculate_fft();
-        calculate_mixfreq();
+        // calculate_fft();
+        // calculate_mixfreq();
+        dac_update();
+        HAL_Delay(5000);
         HAL_ADC_Start_DMA(&hadc1, (uint32_t *)My_adcData, SAMPLE_SIZE+1);
         // for(int i = 1; i < SAMPLE_SIZE; i++)
         // {
@@ -132,3 +177,12 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
         // myprintf("\r\n");
     }
 }
+
+//void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef* hdac)
+//{
+//	if(hdac->Instance == DAC1)
+//	{
+//		HAL_DAC_Start_DMA(&hdac1,DAC_CHANNEL_1, (uint32_t *)Process_Buffer, SAMPLE_SIZE, DAC_ALIGN_12B_R);
+//	}
+//}
+

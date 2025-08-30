@@ -1,10 +1,10 @@
 Dependencies for Project 'MSB2025_VerifyL432', Target 'MSB2025_VerifyL432': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (startup_stm32l432xx.s)(0x68A97D46)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32L432xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l432xx.lst --xref -o msb2025_verifyl432\startup_stm32l432xx.o --depend msb2025_verifyl432\startup_stm32l432xx.d)
-F (../Core/Src/main.c)(0x68A96B8F)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\main.o --omf_browse msb2025_verifyl432\main.crf --depend msb2025_verifyl432\main.d)
+F (startup_stm32l432xx.s)(0x68B1BEBA)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include--pd "__UVISION_VERSION SETA 539" --pd "_RTE_ SETA 1" --pd "STM32L432xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l432xx.lst --xref -o msb2025_verifyl432\startup_stm32l432xx.o --depend msb2025_verifyl432\startup_stm32l432xx.d)
+F (../Core/Src/main.c)(0x68B1BE75)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\main.o --omf_browse msb2025_verifyl432\main.crf --depend msb2025_verifyl432\main.d)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -44,10 +44,10 @@ I (../Core/Inc/adc.h)(0x68A965E7)
 I (../Core/Inc/dac.h)(0x68A965E7)
 I (../Core/Inc/dma.h)(0x68A965E7)
 I (../Core/Inc/i2c.h)(0x68A965E7)
-I (../Core/Inc/tim.h)(0x68A96B66)
+I (../Core/Inc/tim.h)(0x68B17314)
 I (../Core/Inc/usart.h)(0x68A965E7)
 I (../Core/Inc/gpio.h)(0x68A965E7)
-I (./Function/tasks.h)(0x68AA867F)
+I (./Function/tasks.h)(0x68B1BA2D)
 I (./Hardware/oled.h)(0x68A943A6)
 I (./Hardware/oledfont.h)(0x667D2502)
 I (./Hardware/uart.h)(0x68A943D5)
@@ -84,7 +84,7 @@ F (../Core/Src/gpio.c)(0x68A965E7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=
 I (../Core/Inc/gpio.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -120,11 +120,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (../Core/Src/adc.c)(0x68A97D45)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\adc.o --omf_browse msb2025_verifyl432\adc.crf --depend msb2025_verifyl432\adc.d)
+F (../Core/Src/adc.c)(0x68B1BEB8)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\adc.o --omf_browse msb2025_verifyl432\adc.crf --depend msb2025_verifyl432\adc.d)
 I (../Core/Inc/adc.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -160,11 +160,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (../Core/Src/dac.c)(0x68A965E7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\dac.o --omf_browse msb2025_verifyl432\dac.crf --depend msb2025_verifyl432\dac.d)
+F (../Core/Src/dac.c)(0x68B1BEB8)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\dac.o --omf_browse msb2025_verifyl432\dac.crf --depend msb2025_verifyl432\dac.d)
 I (../Core/Inc/dac.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -200,11 +200,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (../Core/Src/dma.c)(0x68A965E7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\dma.o --omf_browse msb2025_verifyl432\dma.crf --depend msb2025_verifyl432\dma.d)
+F (../Core/Src/dma.c)(0x68B1BEB8)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\dma.o --omf_browse msb2025_verifyl432\dma.crf --depend msb2025_verifyl432\dma.d)
 I (../Core/Inc/dma.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -244,7 +244,7 @@ F (../Core/Src/i2c.c)(0x68A965E7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=i
 I (../Core/Inc/i2c.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -280,11 +280,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (../Core/Src/tim.c)(0x68A96E82)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\tim.o --omf_browse msb2025_verifyl432\tim.crf --depend msb2025_verifyl432\tim.d)
-I (../Core/Inc/tim.h)(0x68A96B66)
+F (../Core/Src/tim.c)(0x68B1BEB8)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\tim.o --omf_browse msb2025_verifyl432\tim.crf --depend msb2025_verifyl432\tim.d)
+I (../Core/Inc/tim.h)(0x68B17314)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -324,7 +324,7 @@ F (../Core/Src/usart.c)(0x68A96D88)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs
 I (../Core/Inc/usart.h)(0x68A965E7)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -360,10 +360,10 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (../Core/Src/stm32l4xx_it.c)(0x68A966AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_it.o --omf_browse msb2025_verifyl432\stm32l4xx_it.crf --depend msb2025_verifyl432\stm32l4xx_it.d)
+F (../Core/Src/stm32l4xx_it.c)(0x68B17703)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_it.o --omf_browse msb2025_verifyl432\stm32l4xx_it.crf --depend msb2025_verifyl432\stm32l4xx_it.d)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -399,11 +399,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_it.h)(0x68A966AA)
+I (../Core/Inc/stm32l4xx_it.h)(0x68B17703)
 F (../Core/Src/stm32l4xx_hal_msp.c)(0x68A965E7)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_msp.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_msp.crf --depend msb2025_verifyl432\stm32l4xx_hal_msp.d)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -441,7 +441,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_adc.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_adc.crf --depend msb2025_verifyl432\stm32l4xx_hal_adc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -479,7 +479,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_adc_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_adc_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_adc_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -517,7 +517,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal.o --omf_browse msb2025_verifyl432\stm32l4xx_hal.crf --depend msb2025_verifyl432\stm32l4xx_hal.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -555,7 +555,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_rcc.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_rcc.crf --depend msb2025_verifyl432\stm32l4xx_hal_rcc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -593,7 +593,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_rcc_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_rcc_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_rcc_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -631,7 +631,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_flash.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_flash.crf --depend msb2025_verifyl432\stm32l4xx_hal_flash.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -669,7 +669,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_flash_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_flash_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_flash_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -707,7 +707,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_flash_ramfunc.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_flash_ramfunc.crf --depend msb2025_verifyl432\stm32l4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -745,7 +745,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_gpio.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_gpio.crf --depend msb2025_verifyl432\stm32l4xx_hal_gpio.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -783,7 +783,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_dma.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_dma.crf --depend msb2025_verifyl432\stm32l4xx_hal_dma.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -821,7 +821,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_dma_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_dma_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_dma_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -859,7 +859,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_pwr.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_pwr.crf --depend msb2025_verifyl432\stm32l4xx_hal_pwr.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -897,7 +897,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_pwr_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_pwr_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_pwr_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -935,7 +935,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_cortex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_cortex.crf --depend msb2025_verifyl432\stm32l4xx_hal_cortex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -973,7 +973,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_exti.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_exti.crf --depend msb2025_verifyl432\stm32l4xx_hal_exti.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1011,7 +1011,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_dac.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_dac.crf --depend msb2025_verifyl432\stm32l4xx_hal_dac.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1049,7 +1049,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dac_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_dac_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_dac_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_dac_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1087,7 +1087,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_i2c.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_i2c.crf --depend msb2025_verifyl432\stm32l4xx_hal_i2c.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1125,7 +1125,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_i2c_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_i2c_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_i2c_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1163,7 +1163,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_tim.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_tim.crf --depend msb2025_verifyl432\stm32l4xx_hal_tim.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1201,7 +1201,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_tim_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_tim_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_tim_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1239,7 +1239,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_uart.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_uart.crf --depend msb2025_verifyl432\stm32l4xx_hal_uart.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1277,7 +1277,7 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
 F (../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c)(0x65DF4075)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\stm32l4xx_hal_uart_ex.o --omf_browse msb2025_verifyl432\stm32l4xx_hal_uart_ex.crf --depend msb2025_verifyl432\stm32l4xx_hal_uart_ex.d)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1324,7 +1324,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x65DF404C)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x65DF404C)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/system_stm32l4xx.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x65DF4075)
@@ -1351,11 +1351,11 @@ I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h)(0x65DF4075)
-F (.\Function\tasks.c)(0x68AA8C56)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\tasks.o --omf_browse msb2025_verifyl432\tasks.crf --depend msb2025_verifyl432\tasks.d)
-I (Function\tasks.h)(0x68AA867F)
+F (.\Function\tasks.c)(0x68B1BE80)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\tasks.o --omf_browse msb2025_verifyl432\tasks.crf --depend msb2025_verifyl432\tasks.d)
+I (Function\tasks.h)(0x68B1BA2D)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1423,12 +1423,14 @@ I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp\quaternion_math_functi
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\dsp\window_functions.h)(0x64E2E2DE)
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_const_structs.h)(0x64E2E2DE)
 I (E:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include\arm_common_tables.h)(0x64E2E2DE)
-F (.\Function\tasks.h)(0x68AA867F)()
+F (.\Function\tasks.h)(0x68B1BA2D)()
+F (.\Function\dds.c)(0x68AA9D63)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\dds.o --omf_browse msb2025_verifyl432\dds.crf --depend msb2025_verifyl432\dds.d)
+F (.\Function\dds.h)(0x68AA9D70)()
 F (.\Hardware\f6x8.h)(0x667D0FC0)()
 F (.\Hardware\oled.c)(0x667D2502)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc -I ../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I ../Drivers/CMSIS/Include -I ./Function -I ./Hardware-I.\RTE\_MSB2025_VerifyL432-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\Include-IE:\Hardware\MDK\Packs\ARM\CMSIS-DSP\1.15.0\PrivateInclude-IE:\Hardware\MDK\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Hardware\MDK\Packs\Keil\STM32L4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include-D__UVISION_VERSION="539" -D_RTE_ -DSTM32L432xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32L432xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_M-o msb2025_verifyl432\oled.o --omf_browse msb2025_verifyl432\oled.crf --depend msb2025_verifyl432\oled.d)
 I (Hardware\oled.h)(0x68A943A6)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
@@ -1473,7 +1475,7 @@ F (.\Hardware\uart.c)(0x68A96CC5)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=i
 I (Hardware\uart.h)(0x68A943D5)
 I (../Core/Inc/main.h)(0x68A93CB2)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h)(0x65DF4075)
-I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68A96B66)
+I (../Core/Inc/stm32l4xx_hal_conf.h)(0x68B1BEB8)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h)(0x65DF4075)
 I (../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h)(0x65DF4075)
 I (../Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h)(0x65DF4075)
